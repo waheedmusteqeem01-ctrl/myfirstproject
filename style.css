@@ -1,0 +1,266 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  padding: 25px 60px;
+}
+
+.container {
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  height: 50px;
+  /* border: 1px solid; */
+  left: 0;
+  right: 0;
+  top: 0;
+  padding: 2px 10px;
+  align-items: center;
+  background-color: lightseagreen;
+  color: white;
+  font-family: Verdana;
+  font-weight: 600;
+}
+
+.menu-list {
+  display: flex;
+  gap: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.hero-section {
+  width: 100%;
+  height: 300px;
+  background-color: rgb(193, 192, 192);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.hero-text {
+  font-family: 'Arial black';
+  width: 80%;
+  text-align: center;
+}
+
+.hero-text p {
+  font-family: 'arial narrow';
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.about-section {
+  width: 100%;
+  padding: 20pxs;
+}
+
+.about-text,
+.about-stat {
+  display: flex;
+  gap: 40px;
+}
+
+about-text div {
+  text-align: justify;
+}
+
+.about-stat {
+  gap: 30px;
+  padding: 20px 5px;
+  text-align: center;
+  width: 100%;
+  justify-content: space-between;
+  padding: 20px 15px;
+}
+
+.stat {
+  font-family: sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.stat-number,
+.stat-label {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.stat-label {
+  color: lightseagreen;
+  margin: 9px 0;
+}
+
+.stat-legend {
+  color: #a2a2a2;
+  font-style: italic;
+  font-weight: 300;
+}
+
+.parallax-section {
+  background: url(./3\ STUDENTS.jpg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  text-align: right;
+  height: 400px;
+  padding-right: 50px;
+  width: 100%;
+}
+
+.parallax-text {
+  width: 40%;
+  font-family: verdana;
+  color: white;
+}
+
+.parallax-text p {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 10px;
+  line-height: 1.7;
+}
+
+.contact-section {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 30px;
+  margin-top: 20px 0;
+  padding: 25px 35px;
+}
+
+article {
+  max-width: 100%;
+  text-align: center;
+  width: 100%;
+  color: #a2a2a2;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+article img {
+  min-width: 350px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.article-text {
+  font-family: Arial;
+  max-width: 500px;
+}
+
+.footer-section {
+  width: 100%;
+  background-color: #a2a2a2;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.footer-banner {
+  text-align: center;
+
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  background-color: gray;
+}
+
+button {
+  background-color: transparent;
+  color: white;
+  border-radius: 2px;
+  padding: 10px 12px;
+  margin-top: 20px;
+  font-weight: bolder;
+  border: 2px solid;
+  padding: 15px;
+}
+
+.menu-icon {
+  display: flex;
+}
+
+.menu-icon img {
+  width: 30px;
+}
+
+@media (max-width:600px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .menu-items {
+    display: flex;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 200px;
+    padding: 20px;
+    left: 0;
+    bottom: 0;
+    background-color: aqua;
+  }
+
+  .about-stat,
+  .about-text {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .about-stat {
+    gap: 30px;
+  }
+
+  .parallax-section {
+    justify-content: center;
+    text-align: center;
+    padding-left: 0;
+  }
+
+  .parallax-text {
+    width: 100%;
+  }
+
+  .contact-section {
+    flex-direction: column;
+  }
+}
+
+footer {
+  font-size: 12px;
+}
